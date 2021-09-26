@@ -31,7 +31,12 @@ jobs:
   artifact:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "hello" > hello.txt
+      - run: echo "hello world !!!!!!!!!!!!!!!" > hello.txt
+      - name: hello.txt
+        uses: actions/upload-artifact@v2
+        with:
+          name: HelloWork
+          path: hello.txt
       
 
 
